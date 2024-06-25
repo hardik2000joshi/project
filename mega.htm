@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        
+       ul {
+            text-align: right;
+        }
+        li {
+            display: inline-block;
+            color: grey;
+            padding-right: 30px;
+        }
+        .book li{
+            padding: 10px 15px;
+            color: white;
+            border-radius: 25px;
+            background-color: #d63384;
+        }
+         .acts li{
+            padding: 10px 15px;
+            color: white;
+            border-radius: 25px;
+            background-color: #d63384;
+         }
+        .training {
+            font: 38.485px  "plus jakarta sans", sans-serif;
+            margin-left: 24px;
+        }
+        .learn {
+            color: grey;
+            margin-left: 24px;
+            font: 23.697px rubik, sans-serif;
+        }
+        .code {
+            margin-left: 600px;
+            margin-top: -300px;
+        }
+        .start {
+            border-radius: 25px;
+            width: 45px;
+            height: 20px;
+            background-color: red;
+            padding: 16px 48px;
+            margin-left: 162px;
+            font: 16px Rubik, sans-serif;
+            color: white;
+            text-decoration: none;
+        }
+        .paddle {
+            padding: 160px 48px 100px;
+        }
+        .box {
+            border: 2px solid whitesmoke;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            margin-left: 50px;
+            padding: 20px;
+            margin-bottom: 50px;  
+        }
+        .content {
+            border: 2px solid whitesmoke;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            margin-left: 290px;
+            padding: 20px;
+            margin-top: -295px; 
+        }
+        .cost {
+            border: 2px solid whitesmoke;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            margin-left: 530px;
+            padding: 20px;
+            margin-top: -245px; 
+        }
+        .one {
+            color: grey;
+        }
+        .container {
+            padding: 0px 12px 48px;
+        }
+        .about {
+            padding-left: 330px;
+            
+        }
+        .rain {
+            color: #d63384;
+        }
+        .sat {
+            color: grey;
+        }
+        .more {
+            color: white;
+            background-color: #d63384;
+            border-radius: 25px;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .below {
+            padding: 48px 12px;
+        }
+        .courses {
+            text-align: center;
+        }
+        .coach {
+            color: #d63384;
+        }
+        .eight {
+            padding: 48px 12px;
+        }
+        .after {
+            border: 1px solid whitesmoke; 
+            height: 340px;
+            width: 200px;
+            margin-left: 24px;
+            padding: 24px;
+            text-align: center;
+        }
+        .fafa-globe {
+            color: blue;
+            margin-left: 0px 0px 24px;
+            padding: 24px;
+        }
+        .fafa-database {
+            color: blue;
+            margin-left: 0px 0px 24px;
+            padding: 24px;
+        }
+        .hrt {
+            color: white;
+            background-color: #d63384;
+            border-radius: 22px;
+            cursor: pointer;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .stack {
+            border: 1px solid whitesmoke;
+            height: 340px;
+            width: 200px;
+            margin-left: 290px;
+            padding: 24px;
+            margin-top: -390px;
+            text-align: center;
+        }
+        .app {
+            border: 1px solid whitesmoke;
+            height: 340px;
+            width: 200px;
+            margin-left: 560px;
+            padding: 24px;
+            margin-top: -390px;
+            text-align: center;
+        }
+        .python {
+            border: 1px solid whitesmoke;
+            height: 340px;
+            width: 200px;
+            margin-left: 820px;
+            padding: 24px;
+            margin-top: -390px;
+            text-align: center;
+        }
+        .space {
+            padding: 20px 12px;
+        }
+        .mail {
+            border: 1px solid whitesmoke; 
+            height: 300px;
+            width: 200px;
+            margin-left: 24px;
+            padding: 24px;
+            text-align: center;
+        }
+        .php {
+            border: 1px solid whitesmoke;
+            height: 300px;
+            width: 200px;
+            margin-left: 290px;
+            padding: 24px;
+            margin-top: -350px;
+            text-align: center;
+        }
+        .cloud {
+            border: 1px solid whitesmoke;
+            height: 300px;
+            width: 200px;
+            margin-left: 560px;
+            padding: 24px;
+            margin-top: -350px;
+            text-align: center;
+        }
+        .digital {
+            border: 1px solid whitesmoke;
+            height: 300px;
+            width: 200px;
+            margin-left: 820px;
+            padding: 24px;
+            margin-top: -350px;
+            text-align: center;
+        }
+        .feature {
+            text-align: center;
+            color: #f74780;
+            font: 23.697px "plus jakarta sans", sans-serif;
+            margin: 0px 0px 8px;
+        }
+        .unlock {
+            color: #353f4f;
+            font: 45.879px "plus jakarta sans", sans-serif;
+            margin: 0px 0px 24px;
+            text-align: center;
+        }
+        .offer {
+            color: #757575;
+            font: 16px Rubik, sans-serif;
+            padding-top: 30px;
+            text-align: center;
+        }
+        .globe { 
+            height: 300px;
+            width: 220px;
+            margin-left: 24px;
+            padding: 24px;
+            text-align: center;
+        }
+        .fa-fa-long-arrow-right {
+            margin-left: 30px;
+            margin-top: -100px;
+        }
+        .web {
+            height: 300px;
+            width: 200px;
+            margin-left: 290px;
+            padding: 24px;
+            margin-top: -320px;
+            text-align: center;
+        }
+        .education {
+            height: 300px;
+            width: 220px;
+            margin-left: 560px;
+            padding: 24px;
+            margin-top: -390px;
+            text-align: center;
+        }
+        .devlop {
+            height: 300px;
+            width: 220px;
+            margin-left: 820px;
+            padding: 24px;
+            margin-top: -350px;
+            text-align: center;
+        }
+        .features {
+            color: white;
+            background-color: #d63384;
+            border-radius: 22px;
+            cursor: pointer;
+            text-align: center;
+            position: 100%;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="Menu">
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Courses</li></a>
+                <a href="#"><li>Blogs</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Contact us</li></a>
+                <a href="#" class="acts"><li>Join Now</li></a>
+                <a href="#" class="book"><li>Book Demo</li></a>
+            </ul>
+            </div>
+            <div class="heading">
+                <h1 class="training">The India's Leading IT- <br> Training platform.</h1>
+                <p class="learn">Learn coding and expand your knowledge <br> with our comprehensive range of courses <br> on CodeDesk. Whether you're a beginner <br> looking to learn the basics of programming <br> or an experienced developer seeking to <br> master advanced concepts.</p>
+                <img class="code" src="hero-img-1.png" alt="this is an image" height="200px" width="200px">
+
+                <a href="#" class="start">Get Started</a>
+            </div>
+            <div class="paddle">
+            </div>
+            <div class="box">
+                <h5>Learning Platform</h5>
+                <p class="one">Online and offline <br> learning platform <br>designed to help <br> individuals learn and <br> improve their coding <br> skills.</p>
+            </div>
+            <div class="content">
+                <h5>Content Quality</h5>
+                <p class="one">Evaluate the quality of <br> the learning resources <br> offered by CodeDesk. <br> Look for comprehensive <br> tutorials, up-to-date <br> content, and engaging <br> coding challenges.</p>
+            </div>
+            <div class="cost">
+                <h5>Cost and Value</h5>
+                <p class="one">CodeDesk provides a <br> cost-effective solution <br> for accessing high- <br> quality coding courses.</p>
+            </div>
+            <div class="container">
+
+            </div>
+            <div class="about">
+                <h4 class="rain">About Us</h4>
+                <h2>Best Online & <br> Offline IT-Training <br> Platform In Jaipur</h2>
+                <p class="sat">Welcome to CodeDesk, A platform for all things of coding <br> and development. At CodeDesk, we're passionate about <br> empowering individuals to unlock their potential in the <br> world of technologies.</p>
+                <a href="#" class="more">About More</a>
+            </div>
+            <div class="below">
+
+            </div>
+            <div class="courses">
+                <h4 class="coach">our courses</h4>
+                <h2>"Unlock Your Coding Potential: Explore <br> Our Comprehensive Courses on <br> CodeDesk!"</h2>
+                <p class="sat">CodeDesk offers an immersive learning experience tailored to your needs and goals With expert instructors, hands-on <br> projects, and flexible learning options. Join us today and embark on a journey of discovery, innovation, and endless <br> possibilities in the world of coding!"</p>
+            </div>
+            <div class="eight">
+
+            </div>
+            <div class="after">
+                <i class="fa fa-globe" style="font-size:48px;color:blue">
+                </i> 
+                <h4>Web Designing</h4>
+                <p class="sat">Web designing allows you to <br> express your creativity through <br> visual elements, layout, and user <br> interface design. It's a dynamic <br> field where you can continually <br> experiment and innovate.</p>
+                <a href="#" class="hrt">Read More</a>   
+            </div> 
+            <div class="stack">
+                <i class="fa fa-laptop" style="font-size:48px;color:blue"></i>
+                <h4>Full Stack Web <br> Development</h4>
+                <p class="sat">Full stack web development <br> refers to the practice of creating <br> web applications that include <br> both the front-end (client-side) <br> and back-end (server-side) <br> components, as well as the <br> database.</p>
+                <a href="#" class="hrt">Read More</a>
+            </div>
+            <div class="app">
+                <i class="fa fa-database" style="font-size:48px;color:blue"></i>
+                <h4>App Development</h4>
+                <p class="sat">App development refers to the <br> process of creating software <br> applications designed to run on <br> mobile devices such as <br> smartphones, tablets, and <br> wearable devices, or on desktop <br> computers.</p>
+                <a href="#" class="hrt">Read More</a>
+            </div>
+            <div class="python">
+                <i class="fa fa-sitemap" style="font-size:48px;color:blue"></i>
+                <h4>Python With Django</h4>
+                <p class="sat">Python is a versatile language <br> used in web development, data <br> science, machine learning, <br> artificial intelligence, automation, <br> scripting, game development, <br> and more. Learning Python <br> opens up opportunities in <br> diverse fields.</p>
+                <a href="#" class="hrt">Read More</a>
+            </div>
+            <div class="space">
+
+            </div>
+            <div class="mail">
+                <i class="fa fa-envelope-square" style="font-size:48px;color:blue"></i>
+                <h4>Core & Advanced Java</h4>
+                <p class="sat">Java is one of the most widely <br> used programming languages in <br> the world and Java is suitable for <br> developing applications for <br> various platforms including <br> desktop, mobile, and web.</p>
+                <a href="#" class="hrt">Read More</a>
+            </div>
+            <div class="php">
+                <i></i>
+                <h4>Php With Laravel</h4>
+                <p class="sat">PHP is known for its simplicity and <br> ease of use, making it an <br> accessible language for beginners. <br> Its flexible syntax allows <br> developers to quickly build <br> dynamic web pages and <br> applications.</p>
+                <a href="#" class="hrt">Read More</a>
+            </div>
+            <div class="cloud">
+                <i class="fa fa-cloud" style="font-size:48px;color:blue"></i>
+                <h4>Cloud <br> Computing(AWS,Azure)</h4>
+                <p class="sat">Cloud computing reduces the <br> need for upfront investment in <br> hardware, software, and <br> infrastructure. Instead, <br> businesses pay for the computing <br> resources they use on a pay-as- <br> you-go basis.</p>
+                <a href="#" class="hrt">Read More</a>
+            </div>
+            <div class="digital">
+                <i class="fa fa-mobile" style="font-size:36px;color:blue"></i>
+                <h4>Digital Marketing</h4>
+                <p class="sat">Digital marketing enables <br> businesses to reach a global <br> audience regardless of their size <br> or location. With the internet, <br> businesses can connect with <br> potential customers around the <br> world, expanding their market <br> reach and opportunities for <br> growth.</p>
+                <a href="#" class="hrt">Read More</a>
+            </div>
+            <div class="eight">
+
+            </div>
+            <div >
+                <h4 class="feature">Our Feature</h4>
+                <h1 class="unlock">Unlock the power of our features to <br> drive success effortlessly.</h1>
+                <p class="offer">Our features are designed to empower your journey, offering intuitive tools, seamless integration, and unparalleled <br> support. With user-centric design and cutting-edge technology, we ensure your success is within reach, every step of <br> the way.</p>
+
+            </div>
+            <div class="globe">
+                <i class="fa fa-globe" style="font-size:36px;color:blue"></i>
+                <h4>Digital Marketing</h4> 
+                <i class="fa fa-long-arrow-right" style="font-size:36px;color:blue;"></i>
+                <p class="sat">Elevate your brand's online <br> presence with our comprehensive <br> digital marketing solutions.</p>
+            </div>
+            <div class="web">
+                <i></i>
+                <h4>Web development</h4>
+                <i class="fa fa-long-arrow-right" style="font-size:36px;color:blue;"></i>
+                <p class="sat">Transforming your vision into <br> engaging digital experiences <br> through web development.</p>
+            </div>
+            <div class="education">
+                <i class="fa fa-sitemap" style="font-size:36px;color:blue"></i>
+                <h4>education Counsling</h4>
+                <i class="fa fa-long-arrow-right" style="font-size:36px;color:blue;"></i>
+                <p class="sat">Navigating your educational <br> journey with expert guidance and <br> personalized counseling services</p>
+            </div> 
+            <div class="devlop">
+                <i class="fa fa-mobile-phone" style="font-size:36px;color:blue"></i>
+                <h4>App Development</h4>
+                <i class="fa fa-long-arrow-right" style="font-size:36px;color:blue;"></i>
+                <p class="sat">Transforming your ideas into <br> seamless, user-centric mobile <br> experiences with our expert</p>
+                <a href="#" class="features">More Features</a>
+            </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>student registration form</title>
+    <style>
+      .top {
+        background-color: red;
+        color: yellow;
+      }
+      .initialization {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <pre>           <a href="#">Student Registration Form Using Table in HTML</a></pre>
+    <form
+      class="top"
+      name="form"
+      onsubmit="return myform(), myforms(), myform1(), myform2(), myform3(), myform4(), myform5(), myform6(), myform7()"
+    >
+      <pre>First Name            <input type="text" id="name" value=""> <span id="error"> </span> </pre>
+      <pre>Last Name             <input type="text" id="lastname" value=""> <span id="errors"> </span></pre>
+      <pre>Email Id              <input type="text" id="Email" value=""> <span id="error 1"></span> </pre>
+      <pre>Mobile Number         <input type="number" id="mobile" value=""> <span id="error 2"></span></pre>
+      <pre>Gender                <input type="radio" name="gender" value="Male">Male <input type="radio" name="gender" value="Female">Female  <input type="radio" name="gender" value="Others">others <span id="error 3"></span> </pre>
+      <pre>Date of Birth(DOB)    <input type="date"></pre>
+      <pre>Address               <textarea rows="5" cols="40"></textarea></pre>
+      <pre>city                  <input type="text" id="city" value=""> <span id="error 4"></span> </pre>
+      <pre>Pin code              <input type="number" id="pin" value=""> <span id="error 5"></span></pre>
+      <pre>State                 <input type="text" id="state" value=""> <span id="error 6"></span></pre>
+      <pre>Country               <select><option value="">Afghanistan</option><option value="">Argentina</option><option value="">Australia</option> <option value="">Bangladesh</option><option value="">France</option><option value="">germany</option><option value="">Iceland</option><option selected="">India</option><option value="">Italy</option><option value="">Japan</option> <option value="">Maldives</option></select></pre>
+      <pre>Hobbies               <input type="checkbox" name="Hobbies" value="Drawing">Drawing <input type="checkbox" name="Hobbies" value="Singing">Singing <input type="checkbox" name="Hobbies" value="Dancing">Dancing <input type="checkbox" name="Hobbies" value="Sketching">Sketching <br> 
+                      <input type="checkbox" name="Hobbies" value="others"> others   <input type=""> <span id="error 7"> </span> </pre>
+      <pre>Qualification         <input type="checkbox">High School(10th)</pre>
+      <pre>                      <input type="checkbox">Higher School(12th) </pre>
+      <pre>                      <input type="checkbox">Graduation(Bachelors) </pre>
+      <pre>                      <input type="checkbox">Post Graduation(Masters)</pre>
+      <pre>                      <input type="checkbox">Phd </pre>
+      <pre>Courses <br>Applied For          <input type="checkbox">BCA(Bachelor of Computer Applications)</pre>
+      <pre>                     <input type="checkbox">B.Com(Bachelor of Commerce)</pre>
+      <pre>                     <input type="Checkbox">B.Sc(Bachelor of Science)</pre>
+      <pre>                     <input type="checkbox">BA(Bachelor of Arts)</pre>
+      <pre>                     <input type="checkbox">MCA(Master of Computer Applications)</pre>
+      <pre>                     <input type="checkbox">M.Com(Master of Commerce)</pre>
+      <pre>                     <input type="checkbox">M.Sc(Master of Science)</pre>
+      <pre>                     <input type="checkbox">MA(Master of Arts)</pre>
+      <br />
+      <pre>                         <input type="submit"> <input type="reset"></pre>
+    </form>
+
+    <script>
+      function myform() {
+        var s = document.getElementById("name").value;
+        if (s == "") {
+          document.getElementById("error").innerHTML = "please enter your name";
+          return false;
+        }
+        if (s.length > 50) {
+          document.getElementById("error").innerHTML =
+            "(Max 50 Characters Allowed)";
+          return false;
+        }
+      }
+      function myforms() {
+        var xyz = document.getElementById("lastname").value;
+        if (xyz == "") {
+          document.getElementById("errors").innerHTML =
+            "please enter your last name";
+          return false;
+        }
+        if (xyz.length > 50) {
+          document.getElementById("errors").innerHTML =
+            "(Max 50 Characters Allowed)";
+          return false;
+        }
+      }
+      function myform1() {
+        var k = document.getElementById("Email").value;
+        if (k == "") {
+          document.getElementById("error 1").innerHTML =
+            "please enter your email";
+          return false;
+        }
+        if (k.indexOf("@") <= 0) {
+          document.getElementById("error 1").innerHTML =
+            "don't use @ at the first index";
+          return false;
+        }
+      }
+      function myform2() {
+        var p = document.getElementById("mobile").value;
+        if (p == "") {
+          document.getElementById("error 2").innerHTML =
+            "please enter your mobile number";
+          return false;
+        }
+        if (p.length < 10) {
+          document.getElementById("error 2").innerHTML = "minimum of 10 digits";
+          return false;
+        }
+        if (p.length > 10) {
+          document.getElementById("error 2").innerHTML = "10 digits allowed";
+          return false;
+        }
+        if (
+          p.indexOf("6") != 0 &&
+          p.indexOf("7") != 0 &&
+          p.indexOf("8") != 0 &&
+          p.indexOf("9") != 0
+        ) {
+          document.getElementById("error 2").innerHTML =
+            "start with 6,7,8,9 digit";
+          return false;
+        }
+      }
+      function myform3() {
+        var d = document.form.gender;
+        for (i = 0; i < d.length; i++) {
+          if (d[i].checked == true) return true;
+        }
+        document.getElementById("error 3").innerHTML = "please select anyone";
+        return false;
+      }
+      function myform4() {
+        var x = document.getElementById("city").value;
+        if (x == "") {
+          document.getElementById("error 4").innerHTML =
+            "please enter the city";
+          return false;
+        }
+        if (x.length > 50) {
+          document.getElementById("error 4").innerHTML =
+            "(Max 50 Characters Allowed)";
+          return false;
+        }
+      }
+      function myform5() {
+        var u = document.getElementById("pin").value;
+        if (u == "") {
+          document.getElementById("error 5").innerHTML =
+            "please enter your pin code";
+          return false;
+        }
+        if (u.length > 6) {
+          document.getElementById("error 5").innerHTML =
+            "Max 6 numbers allowed";
+          return false;
+        }
+      }
+      function myform6() {
+        var c = document.getElementById("state").value;
+        if (c == "") {
+          document.getElementById("error 6").innerHTML =
+            "please enter your name";
+          return false;
+        }
+        if (c.length > 50) {
+          document.getElementById("error 6").innerHTML =
+            "(Max 50 Characters Allowed)";
+          return false;
+        }
+      }
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        // Uncheck all checkboxes except the one that was clicked
+        checkboxes.forEach(cb => {
+            if (cb !== checkbox) {
+                cb.checked = false;
+            }
+        });
+    });
+});
+      function myform7() {
+        var Z = document.form.Hobbies;
+        for (i = 0; i < Z.length; i++) {
+          if (Z[i].checked == true) return true;
+        }
+        document.getElementById("error 7").innerHTML =
+          "Max 50 Characters Allowed";
+        return false;
+      }
+    </script>
+  </body>
+</html>
