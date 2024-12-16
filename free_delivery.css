@@ -1,0 +1,164 @@
+.heading {
+    text-align: center;
+    background-color: green;
+    color: whitesmoke;
+    text-transform: capitalize;
+    display: inline-block;
+}
+.header{
+    background-color: green;
+}
+.fa-map-marker,.map, .fa-search, .search, .image, .fa-sign-in, .sign, .fa-shopping-cart, .cart{
+    background-color: whitesmoke;
+    display: inline;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    -webkit-text-fill-color: gray;
+}
+.heading, .fa-whatsapp, .fa-phone, .number {
+    background-color: green;
+    display: inline-block;
+    padding-left: 50px 50px;
+    text-align: center;
+}
+.fa-phone {
+    background-color: red;
+    animation-name: mobile;
+    animation-duration: 15s;
+}
+@keyframes mobile {
+    from {background-color: red;}
+    to {background-color: greenyellow;}
+}
+.options {
+    background-color: gold;
+}
+.button {
+    text-align: right;
+    padding-right: 30 px;
+    color: grey;
+}
+.btn-link {
+    color: whitesmoke;
+    background-color: green;
+}
+.btn-primary {
+padding: 31px, 0px, 0px;
+}
+.btn-secondary {
+    color: white;
+    background-color: gray;
+    padding: 31px, 0px, 0px;
+}
+.btn-success {
+    color: white;
+    background-color: green;
+    padding: 31px, 0px, 0px;
+}
+.btn-danger {
+    color: white;
+    background-color:brown;
+    padding: 31px, 0px, 0px;
+}
+.btn-warning {
+    color: white;
+    background-color: orange;
+}
+.btn-info {
+    color: white;
+    background-color: skyblue;
+    padding: 31px, 0px, 0px;
+}
+.btn-light {
+    color: white;
+    background-color: lightblue;
+    padding: 31px, 0px, 0px;
+}
+.btn-dark{
+    color: white;
+    background-color: black;
+    padding: 31px, 0px, 0px;
+}
+.btn-link {
+    color: skyblue;
+    background-color: red;
+    padding: 31px, 0px, 0px;
+}
+.golden {
+    background-color: burlywood;
+}
+.breadcrumb-item-active, .fa-angle-right, .veggies{
+    display: inline-block; 
+    background-color: goldenrod;
+    text-transform: capitalize;
+    font-weight: bold
+}
+.products {
+    text-align: center;
+    color: grey;
+    background-color: yellowgreen;
+    opacity: initial;
+}
+.container {
+    width: 100%;
+}
+.col-lg-3 {
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+}
+.col-md-3 {
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    margin-top: -300px;
+    margin-left: 400px;
+}
+.col-sm-3 {
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    margin-top: -300px;
+    margin-left: 800px;
+}
+.border {
+    background-color: gold;
+    border-radius: 25 px solid white;
+    height: 1000px;
+    width: 500px;
+}
+.filters {
+    color: grey;
+    background-color: white;
+}
+.fa-check, .fruits{
+    display: inline-block;
+    color:crimson;
+    background-color: white;
+    height: 350 px;
+}
+ .fa-check, .AllFruits{
+    color: chartreuse;
+    display: inline-block;
+}
+.fa-check, .AllVegetables {
+    display: inline-block;
+    color: chocolate;
+    
+}
+.fa-check, .Seasonal_Fruits {
+    display: inline-block;
+    color: blue;
+}
+.fa-check, .Seasonal_Vegetables {
+    display: inline-block;
+    color: cyan;
+}
+.fa-check, .Deals{
+    display: inline-block;
+    color: blueviolet;
+}
+.fa-check, .Combos{
+    display: inline-block;
+    color: blueviolet;
+}
