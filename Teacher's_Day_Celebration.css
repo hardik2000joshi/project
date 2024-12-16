@@ -1,0 +1,57 @@
+body {
+    font: 1em sans-serif;
+    background-color: #f4f4f4;
+    color: goldenrod;
+}
+h1 {
+    padding-right: 50px;
+    margin-left: 100px;
+}
+.btn-primary {
+    color:white;
+    background-color: blue;
+}
+.btn-secondary {
+    color: white;
+    background-color: gray;
+}
+.btn-success {
+    color: white;
+    background-color: green;
+}
+.btn-danger {
+    color: white;
+    background-color:brown;
+}
+.btn-warning {
+    color: white;
+    background-color: orange;
+}
+.btn-info {
+    color: white;
+    background-color: skyblue;
+}
+.btn-light {
+    color: white;
+    background-color: lightblue;
+}
+.btn-dark{
+    color: white;
+    background-color: black;
+}
+.btn-link {
+    color: skyblue;
+    background-color: red;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:10 px;
+    color: firebrick;
+    padding-right: 20px;
+    text-align: center;
+}
+.stt{
+    margin-bottom:1000px;
+    margin-left: 700px;
+}
